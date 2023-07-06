@@ -1,0 +1,1019 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url('img/backFirstGen.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    margin: 40px auto;
+}
+
+.container .title-container {
+    background-color: rgba(240, 240, 240, .6);
+    border-radius: 40px;
+    width: 400px;
+    height: 280px;
+    text-align: center;
+    padding: 40px;
+    margin-top: 190px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.container .title-container h1 {
+    font-size: 70px;
+    color: #ffffff;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+
+.container .title-container h1:hover {
+    animation-play-state: paused;
+}
+
+
+
+.container #cards-container {
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 360px;
+    border: 2px solid #000;
+    border-radius: 18px;
+    position: relative;
+    box-shadow: 4px 4px 4px 4px #000000;
+}
+
+.card img {
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+}
+
+.card span {
+    font-size: 20px;
+    padding: 4px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card small {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card h4::first-letter {
+    text-transform: uppercase;
+}
+
+.card .cardPadding {
+    padding: 10px;
+    background-color: #F2FEF3;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px 4px #000;
+}
+
+.grass {
+    background-color: rgb(57, 240, 65);
+}
+
+.fire {
+    background-color: rgb(234, 82, 0);
+}
+
+.poison {
+    background-color: rgb(159, 21, 168);
+}
+
+.psychic {
+    background-color: rgb(218, 0, 122);
+}
+
+.water {
+    background-color: rgb(0, 158, 227);
+}
+
+.ice {
+    background-color: rgb(155, 220, 248);
+}
+
+.ground {
+    background-color: rgb(203, 163, 27);
+}
+
+.bug {
+    background-color: rgb(117, 181, 119);
+}
+
+.dragon {
+    background-color: rgb(0, 55, 173);
+}
+
+.fairy {
+    background-color: rgb(238, 216, 243);
+}
+
+.sinister {
+    background-color: rgb(37, 24, 40);
+    color: #fff;
+}
+
+.sinister span {
+    color: #000;
+}
+
+.phantom {
+    background-color: rgb(76, 0, 100);
+    color: #fff;
+}
+
+.phantom span {
+    color: #000;
+}
+
+.normal {
+    background-color: rgb(201, 201, 201);
+}
+
+.fight {
+    background-color: rgb(255, 193, 0);
+}
+
+.rock {
+    background-color: rgb(128, 97, 0);
+}
+
+.steel {
+    background-color: rgb(158, 158, 158);
+}
+
+.fly {
+    background-color: rgb(196, 245, 244);
+}
+
+.electric {
+    background-color: rgb(255, 255, 0);
+}
+
+#fire-fly {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(196,245,244,1) 71%);
+}
+
+#grass-poison {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(159,21,168,1) 80%);
+}
+
+#normal-fly {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#bug-poison {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(159,21,168,1) 80%);
+}
+
+#bug-fly {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#water-psychic {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(218,0,122,1) 80%);
+}
+
+#poison-ground {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(203,163,27,1) 80%);
+}
+
+#poison-dragon {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(0,55,173,1) 71%);
+}
+
+#poison-water {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(0,158,227,1) 71%);
+}
+
+#electric-steel {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(158,158,158,1) 80%);
+}
+
+#electric-fly {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#bug-grass {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(57,240,65,1) 80%);
+}
+
+#poison-fly {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(196,245,244,1) 75%);
+}
+
+#water-fight {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(255,193,0,1) 80%);
+}
+
+#water-poison {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(159,21,168,1) 80%);
+}
+
+#rock-ground {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(203,163,27,1) 80%)
+}
+
+#rock-water {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(0,158,227,1) 80%);
+}
+
+#rock-fly {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#water-ice {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(155,220,248,1) 80%);
+}
+
+#water-fly {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#normal-fairy {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(238,216,243,1) 80%);
+}
+
+#phantom-poison {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(159,21,168,1) 80%);
+}
+
+#grass-psychic {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(218,0,122,1) 80%);
+}
+
+#psychic-fairy {
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 38%, rgba(238,216,243,1) 80%);
+}
+
+#ice-psychic {
+    background: rgb(155,220,248);
+    background: linear-gradient(90deg, rgba(155,220,248,1) 38%, rgba(218,0,122,1) 80%);
+}
+
+#ice-fly {
+    background: rgb(155,220,248);
+    background: linear-gradient(90deg, rgba(155,220,248,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#dragon-fly {
+    background: rgb(66,110,205);
+    background: linear-gradient(90deg, rgba(66,110,205,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#water-electric {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 18%, rgba(255,255,0,1) 84%);
+}
+
+#fairy-fly {
+    background: rgb(238,216,243);
+    background: linear-gradient(90deg, rgba(238,216,243,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#psychic-fly {
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#grass-fly {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#sinister-fly {
+    background: rgb(37,24,50);
+    background: linear-gradient(90deg, rgba(37,24,50,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#ground-fly {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#steel-fly {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#water-fairy {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 18%, rgba(238,216,243,1) 71%);
+}
+
+#water-ground {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 18%, rgba(203,163,27,1) 71%);
+}
+
+#water-dragon {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 18%, rgba(0,55,173,1) 71%);
+}
+
+#normal-psychic {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(218,0,122,1) 71%);
+}
+
+#bug-steel {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(158,158,158,1) 71%);
+}
+
+#steel-ground {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(203,163,27,1) 71%);
+}
+
+#bug-rock {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(128,97,0,1) 71%);
+}
+
+#bug-fight {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(255,193,0,1) 71%);
+}
+
+#sinister-ice {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(155,220,248,1) 71%);
+}
+
+#sinister-fire {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(234,82,0,1) 71%);
+}
+
+#fire-rock {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(128,97,0,1) 71%);
+}
+
+#ice-ground {
+    background: rgb(155,220,248);
+    background: linear-gradient(90deg, rgba(155,220,248,1) 38%, rgba(203,163,27,1) 71%);
+}
+
+#rock-sinister {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(37,24,40,1) 71%);
+}
+
+#grass-ground {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(203,163,27,1) 80%);
+}
+
+#fire-fight {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(255,193,0,1) 80%);
+}
+
+#water-steel {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(158,158,158,1) 80%);
+}
+
+#normal-water {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(0,158,227,1) 80%);
+}
+
+#rock-steel {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(158,158,158,1) 80%);
+}
+
+#phantom-fly {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#poison-sinister {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(37,24,40,1) 80%);
+}
+
+#poison-fight {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(255,193,0,1) 80%);
+}
+
+#steel-psychic {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(218,0,122,1) 80%);
+}
+
+#psychic-steel {
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 38%, rgba(158,158,158,1) 75%);
+}
+
+#phantom-sinister {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(37,24,40,1) 80%);
+}
+
+#dragon-ground {
+    background: rgb(0,55,173);
+    background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(203,163,27,1) 80%);
+}
+
+#grass-ice {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(155,220,248,1) 80%);
+}
+
+#psychic-fight {
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 38%, rgba(255,193,0,1) 80%);
+}
+
+#ice-phantom {
+    background: rgb(155,220,248);
+    background: linear-gradient(90deg, rgba(155,220,248,1) 38%, rgba(76,0,100,1) 80%);
+}
+
+#electric-phantom {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 16%, rgba(76,0,100,1) 80%);
+}
+
+#steel-dragon {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(0,55,173,1) 80%);
+}
+
+#phantom-dragon {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(0,55,173,1) 80%);
+}
+
+#fire-steel {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(158,158,158,1) 80%);
+}
+
+#psychic-fire {
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 38%, rgba(234,82,0,1) 80%);
+}
+
+#fight-steel {
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(158,158,158,1) 80%);
+}
+
+#grass-fairy {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#grass-steel {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(158,158,158,1) 75%);
+}
+
+#grass-fight {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#ground-sinister {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 38%, rgba(37,24,40,1) 75%);
+}
+
+#ground-electric {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 38%, rgba(255,255,0,1) 75%);
+}
+
+#ground-phantom {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 38%, rgba(76,0,100,1) 75%);
+}
+
+#fight-sinister {
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(37,24,40,1) 75%);
+}
+
+#sinister-steel {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(158,158,158,1) 75%);
+}
+
+#sinister-dragon {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#normal-grass {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#water-phantom {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#bug-electric {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(255,255,0,1) 75%);
+}
+
+#bug-fire {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(234,82,0,1) 75%);
+}
+
+#phantom-fire {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(234,82,0,1) 75%);
+}
+
+#rock-fight {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#dragon-fire {
+    background: rgb(0,55,173);
+    background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(234,82,0,1) 75%);
+}
+
+#dragon-electric {
+    background: rgb(0,55,173);
+    background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(255,255,0,1) 75%);
+}
+
+#dragon-ice {
+    background: rgb(0,55,173);
+    background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(155,220,248,1) 75%);
+}
+
+#water-sinister {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(37,24,40,1) 71%);
+}
+
+#normal-ground {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(203,163,27,1) 71%);
+}
+
+#fire-normal {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(201,201,201,1) 75%);
+}
+
+#fire-water {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(0,158,227,1) 75%);
+}
+
+#steel-phantom {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(76,0,100,1) 75%);
+}
+
+#steel-fairy {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#sinister-psychic {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(218,0,122,1) 75%);
+}
+
+#electric-normal {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(201,201,201,1) 75%);
+}
+
+#electric-fairy {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#rock-dragon {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#rock-ice {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(155,220,248,1) 75%);
+}
+
+#rock-fairy {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#fight-fly {
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(196,245,244,1) 75%);
+}
+
+#phantom-grass {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#fly-dragon {
+    background: rgb(196,245,244);
+    background: linear-gradient(90deg, rgba(196,245,244,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#psychic-phantom {
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 38%, rgba(76,0,100,1) 75%);
+}
+
+#fight-ice {
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(155,220,248,1) 75%);
+}
+
+#bug-fairy {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#water-bug {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(117,181,119,1) 75%);
+}
+
+#poison-fire {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(234,82,0,1) 75%);
+}
+
+#normal-fight {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#phantom-fairy {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#normal-dragon {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#dragon-fight {
+    background: rgb(0,55,173);
+    background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#rock-poison {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(159,21,168,1) 75%);
+}
+
+#fight-phantom {
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(76,0,100,1) 75%);
+}
+
+#fly-steel {
+    background: rgb(196,245,244);
+    background: linear-gradient(90deg, rgba(196,245,244,1) 38%, rgba(158,158,158,1) 75%);
+}
+
+#bug-psychic {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(218,0,122,1) 75%);
+}
+
+#grass-dragon {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#electric-poison {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(159,21,168,1) 75%);
+}
+
+#sinister-fairy {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#sinister-normal {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(201,201,201,1) 75%);
+}
+
+#sinister-grass {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#ice-bug {
+    background: rgb(155,220,248);
+    background: linear-gradient(90deg, rgba(155,220,248,1) 38%, rgba(117,181,119,1) 75%);
+}
+
+#electric-sinister {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(37,24,40,1) 75%);
+}
+
+#electric-ice {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(155, 220, 248) 75%);
+}
+
+#bug-sinister {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(37,24,40,1) 75%);
+}
+
+#electric-fight {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#poison-normal {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(201,201,201,1) 75%);
+}
+
+#grass-fire {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(234,82,0,1) 75%);
+}
+
+#steel-poison {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(159,21,168,1) 75%);
+}
+
+#ground-fight {
+    background: rgb(203,163,72);
+    background: linear-gradient(90deg, rgba(203,163,72,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#rock-electric {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(255,255,0,1) 75%);
+}
+
+#fairy-fight {
+    background: rgb(238,126,243);
+    background: linear-gradient(90deg, rgba(238,126,243,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#dragon-psychic {
+    background: rgb(0,55,173);
+    background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(218,0,122,1) 75%);
+}
+
+#water-grass {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#bug-ground {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(203,163,27,1) 75%);
+}
+
+#bug-phantom {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(76,0,100,1) 75%);
+}
+
+#fire-ground {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(203,163,27,1) 75%);
+}
+
+#ground-dragon {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#rock-psychic {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(218,0,122,1) 75%);
+}
+
+#rock-grass {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#ground-psychic {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 38%, rgba(218,0,122,1) 75%);
+}
+
+#electric-sinister {
+    color: #000;
+}
+
+.rotateImg {
+    transition-duration: 1s;
+    transform: rotateY(360deg);
+}
+
+.audio {
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#no-audio {
+    display: none;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/*======================= BANNER INFO =======================*/
+
+.bannerInfo {
+    display: none;
+    position: fixed;
+    top: 200;
+    left: 30%;
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    /* transition: all 3s; */
+    border: 8px solid #000;
+}
+
+.bannerInfo::before {
+    content: '---------------------------';
+    left: 2%;
+    font-size: 70px;
+    position: absolute;
+    top: 250px;
+}
+
+#divIcon {
+    position: absolute;
+    top: 30px;
+    left: 600px;
+    padding: 12px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #000;
+}
+
+#imgContainer {
+    font-size: 20px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px #000;
+}
+
+#imgContainer img {
+    width: 80%;
+}
+
+#infoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 240px;
+    padding: 12px;
+    height: 120px;
+    background-color: #fff;
+    border: 4px outset #000;
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    box-shadow: 3px 3px 3px 3px #000;
+
+}
+
+
+.spanIdInfo {
+    font-size: 16px;
+    font-weight: bold;
+}

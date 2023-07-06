@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex - Tercera Generación</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../assets/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- ICON -->
+    <link rel="shortcut icon" href="../assets/img/pokedexIco.png" type="image/x-icon">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/3c3ce1386d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title-container">
+            <h1 id="titleHome">Pokédex</h1>
+        </div>
+        <div class="cards-container" id="cards-container"></div>
+    </div>
+
+    <i class="fa-solid fa-volume-high audio" id="on-audio"></i>
+    <i class="fa-solid fa-volume-xmark" id="no-audio"></i>
+
+    <audio src="../assets/audio/thirdGen.mp3" loop></audio>
+
+    <script src="../src/terceraGen.js"></script>
+
+</body>
+</html>
